@@ -40,7 +40,7 @@ public class NoDebt {
     }
 
     static String getNeededTime() {
-        double neededTime = (double) neededMoney / getBalance(); //TODO: преобразовать инт в дабл правильно!!!
+        double neededTime = (double) neededMoney / getBalance();
         String formattedNeededTime = String.format("%.2f", neededTime);
         return formattedNeededTime;
     }
