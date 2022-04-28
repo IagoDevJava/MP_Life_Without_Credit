@@ -35,13 +35,12 @@ public class NoDebt {
         return salary * 25 / 100 * childAmount;
     }
 
-    static int getBalance() {
+    public static int getBalance() {
         return salary + additionalIncome - savedMoney - compulsoryExpense() - getAliments();
     }
 
-    static String getNeededTime() {
+    public static String getNeededTime() {
         double neededTime = (double) neededMoney / getBalance();
-        String formattedNeededTime = String.format("%.2f", neededTime);
-        return formattedNeededTime;
+        return String.format("%.2f", neededTime);
     }
 }
